@@ -12,6 +12,7 @@ var formSubmitHandler = function(event) {
 
     if (username) {
         getUserRepos(username);
+        repoContainerEl.textContent = "";
         nameInputEl.value = "";
         } else {
             alert("Please enter a GitHub username");
